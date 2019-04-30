@@ -85,7 +85,9 @@ public class NhanVien {
             TienLuong=TienLuong+(TienLuong*0.2);
         }else if (100<=Tonggiolam&&Tonggiolam<200){
             TienLuong=TienLuong+(TienLuong*0.1);
-        }else
+        }else if (Tonggiolam<100){
+            System.out.println("Khong duoc thuong");
+        }
             System.out.println("Tong tien luong va thuong la: "+TienLuong);
     }
 }
