@@ -59,6 +59,7 @@ public class NhanVien {
     public void setTonggiolam(int tonggiolam) {
         Tonggiolam = tonggiolam;
     }
+
     public void inputInfo(){
         Scanner scanner=new Scanner(System.in);
         System.out.println("Nhap ten: ");
@@ -69,9 +70,10 @@ public class NhanVien {
         System.out.println("Dia chi : ");
         Diachi=scanner.nextLine();
         System.out.println("Tien luong la: ");
-        TienLuong=scanner.nextByte();
+        TienLuong=scanner.nextFloat();
+        scanner.nextLine();
         System.out.println("Tong gio lam: ");
-        Tonggiolam=scanner.nextByte();
+        Tonggiolam=scanner.nextInt();
     }
     public void printInfo(){
         System.out.println("Ten la: "+Ten);
@@ -86,8 +88,14 @@ public class NhanVien {
         }else if (100<=Tonggiolam&&Tonggiolam<200){
             TienLuong=TienLuong+(TienLuong*0.1);
         }else if (Tonggiolam<100){
-            System.out.println("Khong duoc thuong");
+            System.out.println("Khong duoc thuong"+TienLuong);
         }
             System.out.println("Tong tien luong va thuong la: "+TienLuong);
+    }
+    public static void main(String args[]){
+        NhanVien nhanVien=new NhanVien();
+        nhanVien.inputInfo();
+        nhanVien.printInfo();
+        nhanVien.tinhThuong();
     }
 }
