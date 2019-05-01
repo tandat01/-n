@@ -1,4 +1,4 @@
-package sec6;
+package sec5;
 
 import java.util.Scanner;
 
