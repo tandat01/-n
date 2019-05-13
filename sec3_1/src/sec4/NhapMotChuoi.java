@@ -1,3 +1,5 @@
+package sec4;
+
 import java.util.Scanner;
 
 public class NhapMotChuoi {

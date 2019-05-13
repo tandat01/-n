@@ -1,4 +1,4 @@
-import com.sun.tools.javac.Main;
+package sec4;
 
 import java.util.Scanner;
 
