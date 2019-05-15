@@ -61,4 +61,7 @@ public class XoaThem extends Them {
             }
         });
     }
+
+    public static void main(String[] args){
+    }
 }
