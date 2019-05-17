@@ -3,12 +3,9 @@ package secssion3;
 import java.util.Scanner;
 
 public class Tamgiac {
-    public int canh_1;
-    public int canh_2;
-    public int canh_3;
-    public Tamgiac() {
-        Dientich();
-    }
+    public double canh_1;
+    public double canh_2;
+    public double canh_3;
 
     public void Kiemtratamgiac() {
         Scanner scanner = new Scanner(System.in);
@@ -25,11 +22,18 @@ public class Tamgiac {
         }
 
     }
-    public int tinhChuVi(){
-        return (canh_1+canh_2+canh_3);
+    public int tinhChuVi() {
+        double chuVi;
+        chuVi = (canh_1 + canh_2 + canh_3);
+        System.out.println("Chu vi Tam giac la: " + chuVi);
+
+        return 0;
     }
     public void Dientich(){
-
+        double t=(canh_1+canh_2+canh_3)/2;
+        double dt;
+        dt=Math.sqrt(t*(t-canh_1)+(t-canh_2)+(t-canh_3));
+        System.out.println("Dien tich Tam giac la: "+dt);
     }
 
 }
