@@ -39,6 +39,4 @@ public class EmployeePartime extends SalaryPolicy{
         System.out.println("Salary is: "+salary);
     }
 
-
-
 }
